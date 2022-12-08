@@ -10,18 +10,22 @@
   <body>
     <header class="menu">
         <div class="container">
-          <input type="checkbox" id="checkbox-menu" />
+          <div class="container-button">
+            <button onclick="mudarCor()">tema</button>
+          <input type="checkbox" id="checkbox-menu" onclick="botaoMenu()" />
           <label class="checkbox-label" for="checkbox-menu">
             <span></span>
             <span></span>
             <span></span>
           </label>
+          </div>
+         
            <div class="text-menu">
-          <nav class="nav-menu">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Sobre</a></li>
-              <li><a href="">Habilidades</a></li>
+          <nav class="nav-menu open" id="ul-menu">
+            <ul >
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Habilidades</a></li>
             </ul>
           </nav>
          </div>
@@ -32,53 +36,63 @@
           <h1>Elisabete Xavier</h1>
       <h2>ADS student</h2>
       <div class="social-media">
-        <a href="">Linkedin</a>
-        <a href="">GitHub</a>
+        <a href="https://www.linkedin.com/in/elisabete-x-491913125/">Linkedin</a>
+        <a href="https://github.com/ElisabeteXavier">GitHub</a>
       </div>
     </header>
       </div>
 
     
-    <main class="principal">
-        <div>
-               <h2>Sobre mim</h2>
+    <main>
+     
+        <div  class="principal">
+          <div>
+         <h2>Sobre mim</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempore fugit praesentium ea debitis labore ipsum sit officiis, officia soluta minima quam autem. Quae cumque illum, laboriosam reprehenderit impedit commodi!
         </p>
+      </div>
+        <img src="./sf.png" alt="">
         </div>
+
+      <div class="habilidade-text">
+        <h2>Habilidades</h2>
+      </div>
 
         <div class="container-habilidade">
 
-            <div class="box">
+            <div class="box" id="box">
               <div class="box-circle"></div>
-              <svg >
-                <circle cx="70"  cy="70" r="70" ></circle>
-                <circle cx="70"  cy="70" r="70" ></circle>
+              <svg style="--percent: 0.25">
+                <circle cx="70"  cy="70" r="70" id="box-circle1" ></circle>
+                <circle cx="70"  cy="70" r="70" id="box-circle2"></circle>
               </svg>
-              <div class="number">
+              <div class="number" id="number-text">
                 <h2>HTML</h2>
                 <h1>70%</h1>
               </div>  
             </div>
 
-              <div class="box">
+              <div class="box" id="box" >
                 <div class="box-circle"></div>
-                <svg >
-                  <circle cx="70"  cy="70" r="70" ></circle>
-                  <circle cx="70"  cy="70" r="70" ></circle>
+                <svg style="--percent: 0.5">
+                  <circle cx="70"  cy="70" r="70" id="box-circle1" ></circle>
+                  <circle cx="70"  cy="70" r="70" id="box-circle2"></circle>
                 </svg>
-                <div class="number">
+                <div class="number" id="number-text">
+                  <h2>CSS</h2>
                   <h1>70%</h1>
                 </div>
               </div>
 
-              <div class="box">
+              <div class="box"  id="box">
                 <div class="box-circle"></div>
-                <svg >
-                  <circle cx="70"  cy="70" r="70" ></circle>
-                  <circle cx="70"  cy="70" r="70" ></circle>
+                <svg style="--percent: 0.25">
+                  <circle cx="70"  cy="70" r="70" id="box-circle1"></circle>
+                  <circle cx="70"  cy="70" r="70" id="box-circle2" ></circle>
                 </svg>
-                <div class="number">
+                <div class="number" id="number-text">
+                  <h2>JAVA</h2>
                   <h1>70%</h1>
                 </div>
               </div>
@@ -91,5 +105,6 @@
 
      
     </main>
+    <script src="./javascript.js"></script>
   </body>
 </html>
