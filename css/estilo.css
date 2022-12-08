@@ -5,11 +5,56 @@
    }
 }
 
+
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+.reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body { overflow-x: hidden; }
 
 .menu{
     background-color:  rgb(47, 35, 58);
@@ -35,7 +80,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 35px;
     position: absolute;
     top: 0;
     right: 0;
@@ -61,6 +106,7 @@ input[id="checkbox-tema"]{
     cursor: pointer;   
     transition: .4s;
     position: relative;
+    margin-right: 5px;
 
 }
 input:checked[id=checkbox-tema]{
@@ -204,7 +250,7 @@ a:hover{
     background: white;
     display: block;
     border-radius: 50%;
-    transform: translate(50%, -50%);
+    /* transform: translate(50%, -50%); */
     transition: 1s;
 }
 
@@ -350,6 +396,7 @@ main{
 .projetos div:hover {
     /* background-color: #121111; */
     transform: translateY(-2px);
+    transition: .5s;
   }
 
 .habilidade-text h2,.contatos-text h2, .projetos-text h2{
@@ -377,24 +424,35 @@ circle{
     stroke: black;
     stroke-width: 10;
     stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dashoffset: 0;
    
 }
 circle:nth-child(1){
     stroke-dashoffset: 0;
     stroke: rgb(207, 207, 207);
+    
 }
 
 circle:nth-child(2){
 
     stroke-dashoffset: calc(440px * var(--percent));   
     stroke: rgb(108, 54, 120);
-    /* animation: circle ;
-    animation-duration: 800ms; */
+    /* animation: circle ; */
+    animation: circle 2s reverse;
+   
    
 }
 
 @keyframes circle{
+
+    0%{
+       
+        stroke-dashoffset: calc(440px * var(--percent));
+    }
+
+    100%{
+        stroke-dashoffset: 440px; 
+    }
   
 }
 .number{

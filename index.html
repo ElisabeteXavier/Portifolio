@@ -13,8 +13,8 @@
   <header class="menu">
     <div class="container">
       <div class="container-button">
-        <input type="checkbox" id="checkbox-tema" onclick="mudarCor()" >
-       
+        <input type="checkbox" id="checkbox-tema" onclick="mudarCor()">
+
         <input type="checkbox" id="checkbox-menu" onclick="botaoMenu()" />
         <label class="checkbox-label" for="checkbox-menu">
           <span></span>
@@ -36,20 +36,21 @@
     </div>
 
 
-    <div class="container-text">
+    <div class="container-text ">
       <h1>Elisabete Xavier</h1>
       <h2>ADS student</h2>
       <div class="social-media">
         <a href="https://www.linkedin.com/in/elisabete-x-491913125/">Linkedin</a>
         <a href="https://github.com/ElisabeteXavier">GitHub</a>
       </div>
+    </div>
   </header>
   </div>
 
 
   <main>
 
-    <div class="principal" id="principal">
+    <div class="principal reveal fade-bottom" id="principal">
       <div>
         <h2>Sobre mim</h2>
         <p id="text-p">
@@ -61,13 +62,13 @@
       <img src="./sf.png" alt="">
     </div>
 
-    <div>
+    <div class="reveal fade-bottom">
 
       <div class="habilidade-text">
         <h2>Habilidades</h2>
       </div>
 
-      <div class="container-habilidade">
+      <div class="container-habilidade ">
 
         <div class="box" id="box">
           <div class="box-circle"></div>
@@ -81,7 +82,7 @@
           </div>
         </div>
 
-        <div class="box" id="box">
+        <div class="box reveal" id="box">
           <div class="box-circle"></div>
           <svg style="--percent: 0.5">
             <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
@@ -95,7 +96,7 @@
 
         <div class="box" id="box">
           <div class="box-circle"></div>
-          <svg style="--percent: 0.25">
+          <svg style="--percent: 0.75">
             <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
             <circle cx="70" cy="70" r="70" id="box-circle2"></circle>
           </svg>
@@ -108,7 +109,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="reveal fade-bottom">
       <div class="projetos-text">
         <h2>Projetos</h2>
       </div>
@@ -123,13 +124,14 @@
         <div>
           <h2>Em Breve</h2>
         </div>
-        
-        
+
+
 
       </div>
     </div>
 
-    <div>
+    <!-- <div class="reveal fade-bottom"> -->
+      <div>
       <div class="contatos-text">
         <h2>Contatos</h2>
       </div>
@@ -141,8 +143,8 @@
 
     </div>
 
-    
-    
+
+
   </main>
   <script src="./javascript.js"></script>
 </body>
