@@ -14,7 +14,8 @@ function mudarCor() {
         document.getElementById("box").style.backgroundColor = "rgb(150, 113, 185)";
         document.getElementById("box-circle1").style.stroke = " rgb(207, 207, 207)" ; 
         document.getElementById("box-circle2").style.stroke = "rgb(108, 54, 120)";
-        document.getElementById("number-text").style.color = " rgb(207, 207, 207)"  ;
+        document.getElementById("number-text").style.color = " rgb(207, 207, 207)" ;
+        document.getElementById("text-p").style.color = "black";
     } else {
         document.body.style.background = 'black';
         localStorage.cor = 'black';
@@ -22,6 +23,7 @@ function mudarCor() {
         document.getElementById("box-circle1").style.stroke = "gray";
         document.getElementById("box-circle2").style.stroke = "rgb(150, 113, 185)";
         document.getElementById("number-text").style.color = "rgb(108, 54, 120)";
+        document.getElementById("text-p").style.color = " lightgray";
 
          
     }

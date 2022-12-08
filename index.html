@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/estilo.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="menu">
-        <div class="container">
-          <div class="container-button">
-            <button onclick="mudarCor()">tema</button>
-          <input type="checkbox" id="checkbox-menu" onclick="botaoMenu()" />
-          <label class="checkbox-label" for="checkbox-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          </div>
-         
-           <div class="text-menu">
-          <nav class="nav-menu open" id="ul-menu">
-            <ul >
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Habilidades</a></li>
-            </ul>
-          </nav>
-         </div>
-        </div>
-       
-     
-      <div class="container-text">
-          <h1>Elisabete Xavier</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="menu">
+    <div class="container">
+      <div class="container-button">
+        <button onclick="mudarCor()">tema</button>
+        <input type="checkbox" id="checkbox-menu" onclick="botaoMenu()" />
+        <label class="checkbox-label" for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="text-menu">
+        <nav class="nav-menu open" id="ul-menu">
+          <ul>
+
+            <li><a href="#principal">Sobre</a></li>
+            <li><a href="#box">Habilidades</a></li>
+            <li><a href="#">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="container-text">
+      <h1>Elisabete Xavier</h1>
       <h2>ADS student</h2>
       <div class="social-media">
         <a href="https://www.linkedin.com/in/elisabete-x-491913125/">Linkedin</a>
         <a href="https://github.com/ElisabeteXavier">GitHub</a>
       </div>
-    </header>
-      </div>
+  </header>
+  </div>
 
-    
-    <main>
-     
-        <div  class="principal">
-          <div>
-         <h2>Sobre mim</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempore fugit praesentium ea debitis labore ipsum sit officiis, officia soluta minima quam autem. Quae cumque illum, laboriosam reprehenderit impedit commodi!
+
+  <main>
+
+    <div class="principal" id="principal">
+      <div>
+        <h2>Sobre mim</h2>
+        <p id="text-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempore fugit praesentium ea debitis labore
+          ipsum sit officiis, officia soluta minima quam autem. Quae cumque illum, laboriosam reprehenderit impedit
+          commodi!
         </p>
       </div>
-        <img src="./sf.png" alt="">
+      <img src="./sf.png" alt="">
+    </div>
+
+    <div class="habilidade-text">
+      <h2>Habilidades</h2>
+    </div>
+
+    <div class="container-habilidade">
+
+      <div class="box" id="box">
+        <div class="box-circle"></div>
+        <svg style="--percent: 0.25">
+          <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
+          <circle cx="70" cy="70" r="70" id="box-circle2"></circle>
+        </svg>
+        <div class="number" id="number-text">
+          <h2>HTML</h2>
+          <h1>70%</h1>
         </div>
-
-      <div class="habilidade-text">
-        <h2>Habilidades</h2>
       </div>
 
-        <div class="container-habilidade">
-
-            <div class="box" id="box">
-              <div class="box-circle"></div>
-              <svg style="--percent: 0.25">
-                <circle cx="70"  cy="70" r="70" id="box-circle1" ></circle>
-                <circle cx="70"  cy="70" r="70" id="box-circle2"></circle>
-              </svg>
-              <div class="number" id="number-text">
-                <h2>HTML</h2>
-                <h1>70%</h1>
-              </div>  
-            </div>
-
-              <div class="box" id="box" >
-                <div class="box-circle"></div>
-                <svg style="--percent: 0.5">
-                  <circle cx="70"  cy="70" r="70" id="box-circle1" ></circle>
-                  <circle cx="70"  cy="70" r="70" id="box-circle2"></circle>
-                </svg>
-                <div class="number" id="number-text">
-                  <h2>CSS</h2>
-                  <h1>70%</h1>
-                </div>
-              </div>
-
-              <div class="box"  id="box">
-                <div class="box-circle"></div>
-                <svg style="--percent: 0.25">
-                  <circle cx="70"  cy="70" r="70" id="box-circle1"></circle>
-                  <circle cx="70"  cy="70" r="70" id="box-circle2" ></circle>
-                </svg>
-                <div class="number" id="number-text">
-                  <h2>JAVA</h2>
-                  <h1>70%</h1>
-                </div>
-              </div>
-
-          
-            <!-- <div class="habilidade"></div>
-            <div class="habilidade"></div>
-            <div class="habilidade"></div>   -->
+      <div class="box" id="box">
+        <div class="box-circle"></div>
+        <svg style="--percent: 0.5">
+          <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
+          <circle cx="70" cy="70" r="70" id="box-circle2"></circle>
+        </svg>
+        <div class="number" id="number-text">
+          <h2>CSS</h2>
+          <h1>70%</h1>
+        </div>
       </div>
 
-     
-    </main>
-    <script src="./javascript.js"></script>
-  </body>
+      <div class="box" id="box">
+        <div class="box-circle"></div>
+        <svg style="--percent: 0.25">
+          <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
+          <circle cx="70" cy="70" r="70" id="box-circle2"></circle>
+        </svg>
+        <div class="number" id="number-text">
+          <h2>JAVA</h2>
+          <h1>70%</h1>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+ 
+
+    <div class="contatos-text">
+      <h2>Contatos</h2>
+    </div>
+
+    <div class="contatos">
+      <img src="./insta.png" alt="">
+      <a href="">elisabetebx@gmail.com</a>
+
+    </div>
+
+  </div>
+  </main>
+  <script src="./javascript.js"></script>
+</body>
+
 </html>
