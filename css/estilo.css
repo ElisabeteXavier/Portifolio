@@ -56,6 +56,10 @@
 }
 body { overflow-x: hidden; }
 
+html, body{
+    overflow: hidden;
+}
+
 .menu{
     background-color:  rgb(47, 35, 58);
     height: 80vh;
