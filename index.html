@@ -28,8 +28,9 @@
           <ul>
 
             <li><a href="#principal">Sobre</a></li>
-            <li><a href="#box">Habilidades</a></li>
-            <li><a href="#">Contatos</a></li>
+            <li><a href="#container-total">Habilidades</a></li>
+            <li><a href="#projeto-total">Projetos</a></li>
+            <li><a href="#contatos">Contatos</a></li>
           </ul>
         </nav>
       </div>
@@ -50,10 +51,14 @@
 
   <main>
 
-    <div class="principal reveal fade-bottom" id="principal">
+    <!-- <div class="container-principal reveal fade-bottom"> -->
+        
+
+     <div class="principal " id="principal">
+      
       <div>
-        <h2>Sobre mim</h2>
-        <p id="text-p">
+        <div class="principal-text"><h2>Sobre mim</h2></div>  
+              <p id="text-p">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempore fugit praesentium ea debitis labore
           ipsum sit officiis, officia soluta minima quam autem. Quae cumque illum, laboriosam reprehenderit impedit
           commodi!
@@ -61,8 +66,9 @@
       </div>
       <img src="./sf.png" alt="">
     </div>
+  <!-- </div> -->
 
-    <div class="reveal fade-bottom">
+    <div id="container-total"  class="reveal fade-bottom">
 
       <div class="habilidade-text">
         <h2>Habilidades</h2>
@@ -82,7 +88,7 @@
           </div>
         </div>
 
-        <div class="box reveal" id="box">
+        <div class="box" id="box">
           <div class="box-circle"></div>
           <svg style="--percent: 0.5">
             <circle cx="70" cy="70" r="70" id="box-circle1"></circle>
@@ -109,7 +115,7 @@
       </div>
     </div>
 
-    <div class="reveal fade-bottom">
+    <div id="projeto-total" class="reveal fade-bottom">
       <div class="projetos-text">
         <h2>Projetos</h2>
       </div>
@@ -125,20 +131,25 @@
           <h2>Em Breve</h2>
         </div>
 
-
-
       </div>
     </div>
 
     <!-- <div class="reveal fade-bottom"> -->
-      <div>
+    <div id="contato-total">
       <div class="contatos-text">
         <h2>Contatos</h2>
       </div>
 
       <div class="contatos">
-        <img src="./insta.png" alt="">
-        <a href="">elisabetebx@gmail.com</a>
+        <div class="contatos-center" id="contatos">
+          <div> <img src="./insta.png" alt="">
+            <a href="">elisabetebx@gmail.com</a>
+          </div>
+          <div> <img src="./whats.png" alt="">
+            <a href="">+55 32 984147684</a>
+          </div>
+        </div>
+
       </div>
 
     </div>

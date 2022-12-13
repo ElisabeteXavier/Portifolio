@@ -287,6 +287,19 @@ a:hover{
     background-color: rgb(108, 54, 120);;
 }
 
+.container-principal{
+    padding: 100px 50px;
+    height: 100%;
+}
+
+.principal-text{
+    font-size: 30px;
+    color: rgb(144, 106, 180);
+    display: flex;
+    justify-content: center;
+
+}
+
 
 .principal{
     display: flex;
@@ -294,8 +307,11 @@ a:hover{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 50px;
     color: black;
+    padding: 100px 50px;
+    height: 100%;
+    margin: 100px 0;
+    
    }
    
    .principal h2{
@@ -317,9 +333,16 @@ a:hover{
 main{
     display:flex;
     flex-direction: column;
-    gap: 100px;
-    margin-top: 100px;
+    /* gap: 100px; */
+    /* padding-bottom: 100px; */
 
+}
+
+#container-total {
+    background-color: #bcbfe1;
+    /* class="reveal fade-bottom"  */
+    padding: 100px 0;
+    height: 100%;
 }
 
 .container-habilidade{
@@ -328,6 +351,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    
 
 
 }
@@ -340,27 +364,54 @@ main{
   
 }
 
-
 .contatos-text{
 
     font-size: 30px;
     color: rgb(144, 106, 180);
     display: flex;
     justify-content: center;
+    /* margin-bottom: 100px; */
 
 }
+.contatos-center{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* margin-bottom: 100px; */
 
+}
 .contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contatos-center div{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+       
 }
 
 .contatos img{
     height: 30px;
     padding: 5px;
 }
+#contato-total{
+    background-color: #bcbfe1;
+    /* class="reveal fade-bottom"  */
+    padding: 100px 0;
+    height: 100%;
+
+}
+
+#contato-total::after{content:"" ;
+    display: block;
+    height: 100px;
+    margin-top: 50px;
+    visibility: hidden;}
 
 .projetos{
     display: flex;
@@ -369,7 +420,18 @@ main{
     justify-content: center;
     gap: 15px;
     
-    
+}
+#projeto-total{
+    height: 100%;
+    margin: 100px 0;
+}
+
+#projeto-total::before{
+    content:"" ;
+    display: block;
+    height: 10px;
+    margin-top: 50px;
+    visibility: hidden;
 
 }
 .projetos div{
@@ -403,7 +465,7 @@ main{
     transition: .5s;
   }
 
-.habilidade-text h2,.contatos-text h2, .projetos-text h2{
+.habilidade-text h2,.contatos-text h2, .projetos-text h2, .principal-text h2{
     font-size: 30px;
     color: rgb(144, 106, 180);
 }
@@ -499,8 +561,8 @@ svg{
 
     }
     
-    .contatos-text, .habilidade-text, .projetos-text {
-        margin-top: 100px;
+    .contatos-text, .habilidade-text, .projetos-text, .principal-text{
+        margin-bottom: 100px;
         text-align: justify;
         justify-content:flex-start;
         align-items: center;
@@ -512,16 +574,17 @@ svg{
 
     }
 
-    .principal div, .habilidade-text, .contatos-text, .projetos-text {
+    .habilidade-text, .contatos-text, .projetos-text, .principal{
         font-size: 30px;
         padding:0 100px;
 
     }
+    
     .container-text h1{
         font-size: 50px;
     }
 
-    .container-text h2{
+    .container-text h2, .principal p{
         font-size: 30px;
     }
 
