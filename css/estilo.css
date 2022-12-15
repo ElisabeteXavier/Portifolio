@@ -237,7 +237,9 @@ a:hover{
     top: 58px;
     right: 50px;
     border-radius: 50%;
-    visibility: hidden;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: 1s;
    
 }
 .nav-menu li, a {
@@ -255,7 +257,7 @@ a:hover{
     display: block;
     border-radius: 50%;
     /* transform: translate(50%, -50%); */
-    transition: 1s;
+    transition: 2s;
 }
 
 .text-menu::before {
@@ -586,6 +588,12 @@ svg{
 
     .container-text h2, .principal p{
         font-size: 30px;
+    }
+
+    .text-menu.open::before {
+        /* content: ''; */
+        width: 800px;
+        height: 800px;
     }
 
 
